@@ -3,7 +3,9 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import '../../globals.css';
 import "../../App.css";
-export const metadata = {
+
+
+const metadata = {
   title: 'Workfreeli',
   description: 'Workfreeli',
 }

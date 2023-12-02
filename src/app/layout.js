@@ -9,7 +9,8 @@ import 'rc-tooltip/assets/bootstrap.css';
 import "../app/components/admin/admin.css";
 import "react-datepicker/dist/react-datepicker.css";
 import 'emoji-mart/css/emoji-mart.css';
-export const metadata = {
+
+const metadata = {
   title: 'WorkFreeli',
   description: 'WorkFreeli',
 }
