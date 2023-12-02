@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{mask:url(#mask-2_00000133504372766920365570000000869489387910414495_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_00000057130088621286110800000015274733987508736392_);}
+	.st5{mask:url(#mask-2_00000144329366519499576320000005957112603762654105_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st6{filter:url(#Adobe_OpacityMaskFilter_00000115515918830974784450000015105956588465371568_);}
+	.st7{mask:url(#mask-4_00000140712766783203010850000006926516956759499710_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g id="Layer_2">
+</g>
+<g id="Layer_1">
+	<g id="Branding_00000181794982127781983250000017809026917093111190_">
+		<g id="Icons_00000103950034769180523170000005980441100466470035_" transform="translate(-1641.000000, -404.000000)">
+			<g id="Group-3" transform="translate(1641.000000, 404.000000)">
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="17.3" y="0" width="218.9" height="256">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				
+					<mask maskUnits="userSpaceOnUse" x="17.3" y="0" width="218.9" height="256" id="mask-2_00000133504372766920365570000000869489387910414495_">
+					<g class="st2">
+						<polygon id="path-1_00000140725490598510305830000008297139670460117935_" class="st1" points="17.3,0 236.2,0 236.2,256 
+							17.3,256 						"/>
+					</g>
+				</mask>
+				<path id="Fill-1_00000019639045635692523310000000697571672962869898_" class="st3" d="M186,85c-4.4-5.1-4.4-12.6,0-17.7
+					l48.6-56.8c3.5-4.1,0.6-10.5-4.8-10.5H27.9C22,0,17.3,4.8,17.3,10.6v78.3v63.3v87.8c0,8.8,7.1,15.9,15.9,15.9
+					s15.9-7.1,15.9-15.9v-87.8h180.6c5.4,0,8.4-6.4,4.8-10.5L186,85z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

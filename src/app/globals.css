@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Project new css*/
+.react-datepicker__header select {
+    font-size: 13px !important;
+}
+

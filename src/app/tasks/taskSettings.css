@@ -1,0 +1,658 @@
+/* task settings css */
+.saveSettings{
+    padding: 5px 20px 5px 20px;
+    border: solid 1px #318fff;
+    border-radius: 50px;
+    background-color: #318fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+.boldText{
+ color: var(--PrimaryC);
+font-size: 22px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+.taskSettingsTextClose {
+
+ 
+    background-color: aliceblue;
+    padding: 5px 20px 8px 20px;
+    border: solid 1px #318fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0079d1;
+    cursor: pointer;
+}
+
+.taskCreateBtn {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 13px 7px 13px;
+  font-weight: 600;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #318fff;
+  border: solid 1px #e3f2fe;
+ }
+
+.BigText{
+  font-size: 26px;
+  font-weight: 600;
+
+}
+
+.flagIcom_area_priority {
+  display: flex;
+  width: 160px;
+  margin: 10px 0px;
+  padding: 7px 0px;
+  border-radius: 5px;
+  /* padding-top: 14px; */
+  /* padding-bottom: 20px; */
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  border: 1px solid #c1ddf4;
+
+} 
+.Checkbox{
+  display: flex;
+  flex: 1 1 0%;
+  background-color: rgb(125, 181, 42);
+  /* align-self: stretch; */
+  border-radius: 100%;
+  margin: 0;
+  padding: 1px;
+}
+.overView_form_first_row_task_setting{
+ 
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 10px 0px;
+    padding: 15px 0px 15px 22px;
+    padding-bottom: 15px;
+    color: #7F96AA !important;
+    /* margin-bottom: 20px; */
+    border: solid 1px #e3f2fe;
+    box-shadow: 0 1px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.overView_form_first_row_task_setting_bottom{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 14px;
+  margin: 3px 0px;
+  padding: 5px 0px;
+  color: #7F96AA !important;
+  width: calc(100% - 80px);
+  bottom: 0px;
+  font-weight: 600;;
+  /* margin-bottom: 20px; */
+  /* border: solid 1px #e3f2fe;
+  box-shadow: 0 1px 20px 0 rgb(0 0 0 / 5%); */
+}
+.overView_form_first_row_task_setting_bottom > div{
+background:#e3f2ff;
+color:#0079d1;
+padding:5px 10px;
+border-radius: 10px;
+display: flex;
+justify-content: flex-start;
+
+}
+.ArchiveIcon{
+
+    background-image: url('/media/images/Archive_Shape.svg');
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top:-2px;
+    position: relative;
+    margin-right:5px;
+
+}
+.CloneIcon{
+  color:#318fff;
+  margin-right: 0px;
+  width:20px;
+  height: 20px;
+}
+.overView_form_first_row_task_setting_inner{
+  display: flex;
+  justify-content:flex-start;
+
+  font-size: 14px;
+  margin: 3px 0px;
+  padding:0px 0px 0px 22px;
+  color: #7F96AA !important;
+  margin-bottom: 10px;
+
+}
+.overView_form_first_row_task_setting > div,.overView_form_first_row_task_setting_inner > div{
+  margin-right:30px;
+}
+
+
+
+.overView_form_first_row_task_setting_inner_year_month{
+  display: flex;
+  justify-content:flex-start;
+
+  font-size: 14px;
+  margin: 5px 0px;
+  padding:0px 22px;
+  color: #7F96AA !important;
+  /* margin-bottom: 20px; */
+
+}
+.overView_form_first_row_task_setting_inner_year_month span{
+  padding:9px 5px;
+  font-size: 16px;
+  color:black;
+}
+.selectMenu{
+
+    border-radius: 5px;
+    padding: 2px 12px;
+    margin-top: 7px;
+    height: 28px;
+    font-size: 16px;
+    border: 1px solid #c1ddf4;
+    margin:5px 8px 0px 8px;
+}
+
+.selectMenu option{
+  font-size: 16px;
+  padding:10px;
+  margin:10px;
+
+}
+
+.overView_form_first_row_task_setting_outer{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+
+  font-size: 14px;
+  margin: 10px 0px;
+  /* padding:10px 20px; */
+  padding-bottom:5px;
+  color: #7F96AA !important;
+  margin-bottom: 20px;
+  border: solid 1px #e3f2fe;
+    box-shadow: 0 1px 20px 0 rgb(0 0 0 / 5%);
+}
+
+
+.task_date_area{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c1ddf4;
+  padding:10px;
+  border-radius: 5px;
+
+}
+
+
+
+
+.task_date_area .container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.task_date_area .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-radius:50%;
+}
+
+/* Create a custom checkbox */
+.task_date_area .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #a0d2fd;
+  /* border: 2px green solid; */
+}
+
+/* On mouse-over, add a grey background color */
+.task_date_area .container:hover input ~ .checkmark {
+  background-color: #a0d2fd;
+}
+
+/* When the checkbox is checked, add a blue background */
+.task_date_area .container input:checked ~ .checkmark {
+  background-color: #a6d068;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.task_date_area .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.task_date_area .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.task_date_area .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(35deg);
+}
+
+.checkSign[type='radio']{
+  margin-right:10px;
+  margin-left: 5px;
+  /* accent-color: green;
+  color:white;
+  width: 18px;
+  height: 18px;
+  margin-top: 10px; */
+
+
+}
+.checkSign[type='radio']:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: 10px;
+  left: -6px;
+  position: relative;
+  background-color: #a0d2fd;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  accent-color: red;
+}
+
+.checkSign[type='radio']:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  accent-color: red;
+  top: 10px;
+  left: -6px;
+  position: relative;
+  background-color: #a6d068;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2x solid white;
+}
+
+
+
+.AssigneeField{
+  padding: 7px;
+  height: 50px;
+  display: flex;
+  justify-content:space-between;
+  border: 1px solid #c1ddf4;
+  border-radius: 5px;
+  margin-top: 8px;
+  width:100%;
+
+}
+
+.searchPeople{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #eef4f9;
+
+}
+.searchPeople ::placeholder { 
+  color: red;
+  opacity: 1;
+}
+.keyword_list_task_settings {
+position: relative;
+/* width:100%; */
+background-color: #ffffff;
+/* top: -10px; */
+z-index: 99;
+box-sizing: border-box;
+padding: 5px 5px;
+max-height: 300px;
+overflow-y: auto;
+border-radius: 5px;
+}
+.keyword_list_task_settings p {
+  border-bottom: 1px solid #e3f2ff;
+  font-size: 14px;
+}
+.keyword_list_task_settings p:hover{
+background-color: #0c1e47;
+  color: #ffffff;
+}
+
+.PlusIcon{
+    font-size: 30px;
+    font-weight: bold;
+    color:#0079d1;
+    /* padding:3px; */
+    display: inline;
+    margin-right: 10px;
+    position:relative;
+    top:-13px;}
+.inviteEmail{
+    display: inline-block;
+    position: relative;
+    top:-17px;
+    font-weight: 600;
+}
+.inviteButton{
+    display: flex;
+    justify-content: flex-start !important;
+    padding:6px 4px;
+
+}
+
+.inviteButton input{
+    padding:8px;
+    width:calc(100% - 90px) !important;
+    border-radius: 10px;
+    border:1px solid #c1ddf4;
+    padding-right: 30px;
+}
+.inviteButton div{
+    background-color: #0079d1;
+    color: white;
+    width: 85px;
+    padding: 8px;
+    margin:auto;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width:100%;
+}
+span.clearInput.emailField {
+    right: -10px;
+    top: -11px;
+    position: relative !important;
+}
+span.clearInput.emailField::before {
+    content: "\f057";
+    font-family: var(--FA);
+    font-weight: 600;
+    color: var(--NewRed);
+    font-size: 20px;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    float: right;
+    /* margin-left: -20px !important; */
+  }
+
+  
+.participantImageTask_settings {
+    float: left;
+    /* width: 68px; */
+    /* height: 100%; */
+    /* border-radius: 12px; */
+    /* padding: 8px 12px 8px 0px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .participantImageTask_settings img {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    margin-right:10px;
+  }
+
+  .participantTitleTask_settings{
+    margin:auto;
+    margin-left:10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color:#032e84
+  }
+  .nameLetters_task_settings {
+    width: 41px;
+    height: 41px;
+    /* background-color: #028bff; */
+    /* background-color: #9b9b9b; */
+    background-color: #0c1e47;
+  
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* font-size: 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .DropDownItem_color{
+    color:black;
+  }
+
+.repeatTask .dropdown-header{
+   
+    color:black;
+
+  }
+
+
+  .repeatTask .dropdown-header i.fa.fa-chevron-right.icon.false {
+    color: black;
+  }
+  .AddKeywordsPopup_task_settings{
+    display: block;
+    z-index: 99999;
+    height: auto;
+   width: 300px;
+    position: absolute;
+    padding: '10px';
+    padding: -5px;
+    border: 1px solid #CFD4DB;
+    border-radius: 5px;
+  }
+
+
+
+.dropUp{
+  width: auto;
+  border-radius: 5px;
+  background-color: #5b6477;
+  margin-left:10px;
+  margin-top: 5px;
+}
+
+.dropUp-header {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.dropUp-body {
+  border-top: 1px solid #E5E8EC;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 1px;
+  bottom:40px;
+}
+.repeatTask .dropUp-header{
+   
+  color:black;
+
+}
+.dropUp-body.openUp {
+display: block;
+position: absolute;
+  width: 100%;
+  z-index: 9;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.dropUp-item {
+padding: 10px;
+border-bottom: 1px solid #c1ddf4;
+}
+
+.dropUp-item:hover {
+cursor: pointer;
+}
+
+.dropUp-item-dot {
+opacity: 0;
+color: #91A5BE;
+transition: all .2s ease-in-out;
+}
+
+.dropUp-item-dot.selected {
+opacity: 1;
+}
+
+.icon {
+font-size: 13px;
+color: #91A5BE;
+transform: rotate(0deg);
+transition: all .2s ease-in-out;
+}
+
+.icon.openUp {
+transform: rotate(-90deg);
+}
+
+.dropUp-item.selected {
+background-color: #023d67;
+color: #fff;
+}
+.dropUp-item:hover {
+background-color: #023d67;
+color: #fff;
+}
+
+input.start_Date {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  /* margin-top: 15px; */
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+
+}
+
+.vsCalenderIcon{
+ position: absolute;
+ margin:10px 0px 0px -30px;
+ color:black;
+ cursor: pointer;
+  
+  }
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,.css-1x5jdmq{
+    padding:8px !important;
+  }
+  
+  .css-i44wyl {
+    width:100% !important;
+  }
+  span.clearInput.endDate::before {
+    content: "\f057";
+    font-family: var(--FA);
+    font-weight: 600;
+    color: var(--NewRed);
+    font-size: 20px;
+    position: relative;
+    top: 19px;
+    left: -5px;
+    cursor: pointer;
+  }
+  .task_body_container_save_Settings {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.ellipsisText{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:90% !important
+}
+.createanotherTask {
+  padding: 8px 18px 9px 19px;
+  border-radius: 34px;
+  background-color: #ffaf4c;
+  margin-left: 51px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+/* task settings css  end*/

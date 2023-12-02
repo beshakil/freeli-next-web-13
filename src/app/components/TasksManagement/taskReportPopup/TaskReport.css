@@ -1,0 +1,733 @@
+.ReportSlider {
+    width: 1036px;
+    min-height: 505px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    ;
+
+  }
+  .ReportHeader{
+    height:137px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: linear-gradient(103deg, #FFF5E8 26%, #F2EBF4 83%);
+    width:100%;
+
+  }
+  .HeaderLeft{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 0px 20px 30px;
+
+  }
+  .firstChild{
+    
+    font-size: 16px;
+    padding: 3px;
+    background-color: #dfdfdf;
+    /* border-radius: 5px; */
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+  .secondChild{
+    margin-top: 10px;
+    font-size: 34px;
+  }
+  .TbBulbCss{
+    width:142px;
+    height: 138px;
+    transform: rotate(45deg);
+    margin-right: -20px;
+
+  }
+  .ReportBody{
+    /* min-height: 505px; */
+    height: 505px;
+    overflow-y: auto;
+  }
+  .ReportingPeriod {
+    padding: 31px 37px 0 37px;
+}
+.workload_report_caption {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5b6477;
+    padding-bottom: 19px;
+}
+.report_item {
+    padding: 21px 26.6px 21px 21px;
+    border-radius: 13px;
+    border: solid 1px #a0d2fd;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 66px;
+}
+.workload_report_secound {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.reportcheck_area [type="radio"]:checked,
+.reportcheck_area [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.reportcheck_area [type="radio"]:checked + label,
+.reportcheck_area [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0b1f47;
+}
+.reportcheck_area [type="radio"]:checked + label:before,
+.reportcheck_area [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background:rgba(120, 144, 165, 0.24);
+}
+.reportcheck_area [type="radio"]:checked + label:after,
+.reportcheck_area [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #318fff;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.reportcheck_area [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.reportcheck_area [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.monthDateText {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0b1f47;
+}
+.Pick_a_date_period {
+    height: 66px;
+    flex-grow: 0;
+    padding: 0 27px 0 21px;
+    border-radius: 13px;
+    border: solid 1px #a0d2fd;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.reportcheck_startDate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.reportcheck_startDate span.calenderIcon_task {
+    top: 9px;
+    margin-right: 10px;
+    position: absolute;
+    color: var(--PrimaryC);
+    right: -32px;
+}
+.checkItemArea {
+    width: 33%;
+}
+.reportcheck_area.lastPriod {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #a0d2fd;
+}
+.lastColumn {
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 23px;
+    width: 67%;
+}
+.reportcheck_endDate {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+.toPriod {
+    padding-left: 15px;
+}
+.reportcheck_endDate span.calenderIcon_task {
+    position: absolute;
+    right: -30px;
+}
+.reportcheck_startDate span.clearInputTaskMain::before {
+    right: 18px !important;
+
+}
+.reportcheck_endDate span.clearInputTaskMain::before {
+    right: 18px !important;
+
+}
+
+  .ReportFooter{
+    height: 70px;
+    background-color: white;
+    border-top:1px solid #a0d2fd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    align-items: center;
+  }
+  .BtnCancel{
+    font-size: 14px;
+    border-radius: 20px;
+    color:white;
+    height: 25px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+  }
+  .slideToggle{
+    display: flex;
+    
+  }
+  .slideToggle span{
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    background-color: #dfdfdf;
+    margin:0px 5px;
+    display: block;
+    cursor:pointer;
+  }
+
+  /*Task missing csss*/
+  .TaskMissingHours {
+    padding: 31px 0px 0px 0px;
+}
+.TaskMissing_top_para {
+  padding-bottom: 31px;
+  border-bottom: 1px solid #e3f2ff;
+  padding-left: 37px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b6477;
+
+}
+ul.taskMissing_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.taskMissing_list_area {
+  padding: 24px 20px 24px 37px;
+  border-bottom: 2px solid rgb(160 210 253 / 40%);
+}  
+li.listName {
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  width: 90%;
+}
+li.listEdit span {
+  width: 59px;
+  height: 24px;
+  padding: 2px 16px 1px;
+  border-radius: 40px;
+  background-color: rgba(148, 178, 255, 0.18);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5b6477;
+  cursor: pointer;
+  padding-bottom: 4px;
+
+}
+li.liststatus {
+  width: 5%;
+  position: relative;
+  top: 8px;
+}
+li.listEdit {
+  width: 5%;
+}
+.taskMissing_body {
+  overflow-y: auto;
+  height: 450px; 
+  background-color: rgba(196, 208, 222, 0.15);
+}
+
+.updateTaskMissing {
+  padding: 25px 20px 20px 37px;
+
+}
+
+.heading_hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #e3f2ff;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 16px;
+}
+.trackHours {
+  border-radius: 20px;
+  border: solid 1px #a0d2fd;
+  padding: 16px 0px 20px 0px;
+  background-color: #ffffff;
+}
+.heading_hours .buttonList {
+  display: flex;
+  width: auto;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.heading_hours .buttonList .saveBtn {
+  padding: 2px 13px 3px 14px;
+  border-radius: 45px;
+  background-color: #318fff;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.heading_hours .buttonList .cencelBtn {
+  padding: 2px 13px 3px 14px;
+  border-radius: 45px;
+  background-color: #e3f2ff;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #006ab7;
+  cursor: pointer;
+}
+ul.collumns_lists {
+  display: flex;
+  align-items: center;
+  padding: 11px 18px 13px 18px;
+  width: 100%;
+}
+li.collumns_list_check {
+  width: 3%;
+}
+li.collumns_list_from {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #318fff;
+}
+li.collumns_list_to {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #318fff;
+}
+li.collumns_list_hours {
+  width: 17%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #318fff;
+  padding-right: 6px;
+}
+textarea.notes {
+    border: 1px solid #d9e2e8;
+    height: 37px;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: 5px;
+}
+ul.collumns_lists.header {
+    padding-bottom: 0;
+    background-color: #f6f6f6;
+}
+li.collumns_list_note {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #318fff;
+}
+.collumns_lists_bottom ul.collumns_lists {
+    border-top: 1px solid #a0d2fd;
+    border-bottom: 1px solid #a0d2fd;
+    background-color: #fff;
+}
+.collumns_lists_bottom .collumns_lists_body {
+    background-color: #f3f3f3;
+}
+.collumns_lists_bottom .total_area_task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.collumns_lists_bottom .total_area_total {
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #318fff;
+}
+.collumns_lists_body {
+    background-color: #f6f6f6;
+}
+.heading_hours .title {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0b1f47;
+}
+.BsCheck {
+    cursor: pointer;
+}
+.taskMissig_startDate {
+    position: relative;
+    display: flex;
+    
+}
+.taskMissig_endDate {
+    position: relative;
+    display: flex;
+    
+}
+li.collumns_list_from .taskMissig_startDate .react-datepicker-wrapper {
+    padding-right: 6px !important;
+}
+li.collumns_list_to .taskMissig_endDate .react-datepicker-wrapper {
+    padding-right: 6px !important;
+}
+.taskMissig_startDate span.clearInputTaskMain::before {
+    position: absolute;
+    left: 115px;
+}
+.taskMissig_endDate span.clearInputTaskMain::before {
+    position: absolute;
+    left: 115px;
+}
+input.hours_count {
+    width: 100%;
+    border: 1px solid #d9e2e8;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: 3px;
+}
+.total_area_total_hours {
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #318fff;
+}
+button.button.add {
+  background-color: #0d2150;
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+ul.collumns_lists.extra_row {
+  position: relative;
+}
+ul.collumns_lists.extra_row span.clearInputTaskMain::before {
+  top: 22px;
+  right: 20px;
+}
+/*Taskoverdue*/
+.tasksOverduePara {
+  padding: 31px 40px 42px 37px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b6477;
+  border: solid 0.3px rgb(160 210 253 / 20%);
+}
+ul.tasksOverdue_list {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px 8px 37px;
+  gap: 10px;
+  border-bottom: solid 2px rgb(160 210 253 / 20%);
+}
+li.projectTitle {
+  width: 55%;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #858fa3;
+
+}
+li.pt_startDate {
+  width: 15%;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #858fa3;
+
+}
+li.pt_endDate {
+  width: 15%;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #858fa3;
+
+}
+li.pt_Progress{
+  width: 15%;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #858fa3;
+
+}
+ul.tasksOverdue_status_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 20px 24px 37px;
+  border-bottom: solid 2px rgb(160 210 253 / 20%);
+}
+li.tasksOverdue_title {
+  width: 55%;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0b1f47;
+}
+li.tasksOverdue_startDate {
+  width: 15%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0b1f47;
+}
+  li.tasksOverdue_endDate {
+    width: 15%;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0b1f47;
+}
+li.tasksOverdue_progress {
+  width: 15%;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0b1f47;
+}
+.taskUnassigned_body {
+  overflow-y: auto; 
+  /* height: 450px; 
+  /* background-color: rgba(196, 208, 222, 0.15); */
+}
+
+.taskUnassigned_body > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3f2ff;
+  padding:20px 40px;
+
+}
+/* .taskMissing_body > div:last-child{
+  border-bottom: 1px solid #a0d2fd;
+  margin-bottom: 10px;
+} */
+
+.taskUnassigned_body > div p{
+  font-size: 14px;
+  color:#0b1f47;
+}
+
+.taskUnassigned_body .mcPlan{
+  font-size: 18px;
+  color:#0b1f47;
+}
+
+.AssignTo{
+  margin: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.MemberSelector{
+  
+  background: #e3f2ff;
+  border-radius: 40px;
+  width: 200px;
+
+}
+.memberNameEllipsis{
+  width: 85px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sliderActive{
+  background-color: #318FFF !important;
+}
+
+.select-ecosystem.taskstatus_are.css-2b097c-container .css-g1d714-ValueContainer {
+  min-height: unset !important;
+  margin-top: 0 !important;
+}
+.select-ecosystem.taskstatus_are.css-2b097c-container .css-tlfecz-indicatorContainer {
+  padding-top: 5px !important;
+}
+span.vscaledar {
+  padding-left: 11px;
+}
+/* .css-tj5bde-Svg{
+  color: #ffffff !important;
+} */
+.select-ecosystem.taskstatus_are.css-2b097c-container .css-tlfecz-indicatorContainer .css-tj5bde-Svg {
+  color: #ffffff;
+}
+.select-ecosystem.taskstatus_are .css-1uccc91-singleValue {
+  color: #ffffff;
+  letter-spacing: 1px;
+}

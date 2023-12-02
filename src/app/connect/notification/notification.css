@@ -1,0 +1,10 @@
+.notificationIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notificationIconImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}

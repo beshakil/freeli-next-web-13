@@ -1,0 +1,833 @@
+
+.tagHomeTable{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    overflow-y:auto;
+    padding:10px 20px;
+    background-color: #EEF3F9;
+ 
+ 
+   }
+ 
+   .tagTable,.tagTable3{
+     animation-name: example;
+     animation-duration: 0.5s;
+     animation-iteration-count: 1;
+     margin:10px 10px;
+   }
+   
+   @keyframes example {
+     0% {    margin:0px 0px;border-radius: 0px;}
+     50% {     margin:0px 0px;border-radius: 10px;}
+     100% {     margin:10px 10px;}
+   }
+ 
+ #root.dark  .tagHomeTable,#root.dark  .tagHomeTable .tagTableCol3{
+     background-color: black;
+  }
+ 
+ 
+  #root.dark .fileListTag span{
+     color:white !important;
+  }
+ 
+ 
+ .tagTableRow{
+     display: flex;
+     width:100%;
+     /* height:250px; */
+     flex-direction: row;
+     justify-content: flex-start;
+     
+ }
+ 
+ 
+ .errorBorder{
+     border:1.5px solid red !important;
+ }
+ 
+ 
+ .tagTable{
+     border:1px solid #ddd;
+     background-image: linear-gradient(120deg, #DFEAF8 3%, #E0E7F5 97%);
+     width:50%;
+     min-width: 350px;
+     padding:10px 10px 0px 10px;
+     display: flex;
+     flex-direction: column;
+     margin:10px 10px;
+     height: auto;
+     border-radius: 10px;
+ }
+ 
+ .tagTable1 {
+     width: auto;
+     /* display: flex; */
+     justify-content: space-between;
+     flex-direction: row;
+     overflow-y:auto;
+     background: white;
+     height: 100%;
+     min-height: 100px;
+ 
+ }
+ 
+ #root.dark .tagTable1{
+     background-color: black;
+ }
+ #root.dark .darkThemeText{
+     color: white !important;
+ }
+ 
+ 
+ 
+ .tagTableCol1{
+     width:50%;
+ }
+ .tagTable1Flex{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         overflow-y: auto;
+         flex-direction: row;
+         column-count: 2;
+     
+ }
+ 
+ 
+ 
+ .favTagView {
+     width: 100%;
+     /* padding: 8px 10px; */
+     /* margin: 10px 10px 0px 0px; */
+     height: 30px;
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     justify-content: left;
+     flex-direction: row;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     font-size: 14px;
+     cursor: pointer;
+     line-height: 14px;
+ }
+ .favTagViewMain {
+     width: 46%;
+     padding: 8px 10px;
+     margin: 10px 10px 0px 0px;
+     height: 30px;
+     background-color: white;
+     border-radius: 20px;
+     display: flex;
+     justify-content: space-between;
+     justify-content: left;
+     flex-direction: row;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     /* font-size: 14px; */
+     cursor: pointer;
+ }
+ 
+
+ .tagTableCol2 {
+     width: 100%;
+     /* padding: 5px 10px;
+     margin: 10px 10px; */
+     /* border-radius: 5px; */
+     display: flex;
+     justify-content: center;
+     justify-content: center;
+     flex-direction: row;
+     column-gap: 5%;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+ }
+ 
+ .tagTableCol2 .sharedTag{
+     width:100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background:white;
+     /* margin:0px 7px; */
+     border-radius: 15px;;
+ 
+ }
+ .tagTableCol2 .sharedTag .tag{
+ 
+   /* padding:20px; */
+   /* font-size: 30px; */
+   height: 110px;
+   width:100%;
+   display: flex;
+   justify-content: center;
+   margin:0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   vertical-align: middle;
+     
+ }
+ .tagTable2{
+     width:auto;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;  
+     padding:5%;
+ }
+ .viewTag{
+     border-top:1px solid #e3f2ff;
+     padding:10px 15px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+ }
+ .bigFont{
+     font-size: 50px;
+     margin-right:10px;
+ }
+ 
+ 
+ 
+ .tagTableRow31{
+     background-color: #FFF2E1;
+     padding:3px 15px;
+     border-radius: 20px;
+     margin-top:15px;
+     border:1px solid #CF872D;
+     cursor: pointer;
+     height: 34px;
+     
+ 
+ }
+ 
+ .PointerDissable{
+     pointer-events: none !important;
+ }
+ .tagTableRow3{
+     display: flex;
+     justify-content: space-between;
+     background-color: #FFF2E1;
+     border-radius: 20px;
+     color:#CF872D;
+     /* font-size: 14px; */
+     cursor: pointer;
+         font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+ 
+ }
+ 
+ 
+ .goIcon{
+     background-image: url(/media/images/vector.svg);
+     content: "";
+     width: 14px;
+     height: 25px;
+     background-repeat: no-repeat;
+     background-position-y: 50%;
+     background-size: 100%;
+    
+    
+ }
+ 
+ .goIconBlack{
+     background-image: url('/media/images/black_go.svg');
+     content: "";
+     width: 12px;
+     height: 20px;
+     background-repeat: no-repeat;
+     background-position-y: 50%;
+     background-size: 100%;
+ 
+ }
+ 
+ 
+ 
+ .favTag{
+     padding:5px;
+ }
+ 
+ .most_recent{
+     padding:13px 5px 15px 0px;
+     margin-left:22px;
+ }
+ .tagTableCol3 {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     border-radius: 0px 0px 10px 10px;
+     flex-direction: column;
+     overflow-y: auto;
+     overflow-x: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     background-color: white;
+     /* padding-bottom: 14px; */
+ }
+ .PointerEventNone{
+     pointer-events: none;
+ }
+ 
+ 
+
+ .PersonalTag_circle{
+    margin-right:10px;
+    min-width: 14px;
+    height: 14px;
+    border-radius: 20px;
+    position: relative;
+    margin-left:10px;
+    border:1px solid;
+
+}
+ 
+ .filebar{
+     display: flex;
+     justify-content: flex-start;
+     border-bottom:1px solid #dfdfdf;
+     padding:13px 15px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+.total_tagFiles {
+    margin-left: auto;
+    margin-right: 10px;
+}
+ .fileListTag{
+     display: flex;
+     justify-content: flex-start;
+     cursor: pointer;
+ 
+ }
+ 
+ .tagTable3{
+     width:50%;
+     border: 1px solid #dfdfdf;
+     min-width: 350px;
+     padding-top:10px;
+     display: flex;
+     flex-direction: column;
+     margin:10px 10px;
+     height: auto;
+     border-radius: 10px;
+     /* padding-bottom: 10px; */
+     background:#E1E8F7 ;  
+     /* background-image: linear-gradient(to right, #FDF0F6 16%, #F1EDF8 88%); */
+   
+ }
+ .personal_tag{
+     display: grid;
+     grid-template-columns: 130px auto;
+     padding: 10px 5px 15px 0px;
+     margin-left:22px;
+ }
+ 
+ .personal_tag > div{
+     background-color: white;
+     border-radius: 10px;
+     margin:0px 10px ;
+     padding:0px 5px;
+     display: flex;
+     justify-content: flex-start;
+ 
+ }
+ 
+ .personal_tag input{
+     width:100%;
+     border:0px;
+     padding-right: 10px;
+     padding-left:5px
+ }
+ .NotFoundTagnew{    
+     /* height: 100%; */
+     width: 100%;
+     text-align: center;
+     margin-top: 50px;
+     padding: 0px 0px;
+     font-size: 14px;
+ }
+ 
+ .personal_tag > div  span{
+ /* width:40px; */
+ /* width:22px;
+ height: 22px;
+ color:white;
+ border-radius: 11px;
+ text-align: center;
+ justify-content: center;
+ position: relative;
+ display: flex;
+ background-color: black;
+ cursor:pointer;
+ margin:2px 0px; */
+     /* width: 40px; */
+
+     /* right: 20px;
+     top: 6px; */
+       /* width: 40px; */
+    /* width: 40px; */
+    width: 18px;
+    height: 18px;
+    background-color: var(--PrimaryC);
+    border-radius: 50%;
+    margin-right:-3px;
+    margin-top: 4px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+ .iconPlus{
+    font-size: 30px;
+ }
+ 
+ 
+ .filebar:hover,.favTagViewMain:hover{
+     background-color:#dfdfdf;
+ }
+ 
+ #root.dark .filebar:hover{
+     background-color:grey;
+ }
+ .all_tag_head {
+     padding-left: 30px;
+     display: flex;
+     padding-top: 34px;
+     padding-bottom: 25px;
+     background-color: rgba(237, 242, 246, 0.46);
+     align-items: center;
+     gap: 16px;
+ }
+ .allSharedTags {
+     font-size: 26px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.08;
+     letter-spacing: normal;
+     text-align: left;
+     color: #0b1f47;
+ }
+ span.allTags_back {
+     background-image: url('/media/images/tagBack.svg');
+     background-size: 15px;
+     width: 16px;
+     height: 32px;
+     background-repeat: no-repeat;
+     background-position: center center;
+     cursor: pointer;
+ }
+ .tag_Filter_area {
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin-top: 0px;
+     background-image: linear-gradient(97deg, #a5d5ff24 48%, #56b1ff0f 70%);
+ }
+ .tag_Filter_inner_area{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     grid-gap: 12px;
+     gap: 12px;
+     border-radius: 47px;
+     background-color: rgb(120 144 165 / 15%);
+     width: 325px;
+     height: 36px;
+     padding-left: 4px;
+ }
+ .tag_Filter_area .tagFilter_title{
+     padding: 4px 14px 4px 12px;
+     font-size: 12px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.29;
+     letter-spacing: normal;
+     text-align: left;
+     color: #0b1f47;
+     cursor: pointer;
+ }
+ .tagFilter_title.active {
+     border-radius: 47px;
+     background-color: rgb(255 255 255 / 85%);
+     padding: 4px 14px 4px 12px;
+ }
+ .tagMyColor {
+     width: 14px;
+     height: 14px;
+     border-radius: 40px;
+ }
+ .tagFlieList_body.tagHalfView {
+     height: calc(100vh - 406px);
+     
+ }
+ 
+ .tagFlieList_body.tagFullView {
+     height: calc(100vh - 320px);
+     
+ }
+ .Advance_search_top_Task .col1.tagcol {
+     width: 36%;
+ }
+ .Advance_search_task.forTagging .Advance_search_top_Task.newClass {
+     justify-content: flex-start;
+     gap: 15px;
+ }
+ .fromDate_One_task{
+     position: relative;
+ }
+ #root.dark .tag_Filter_area .tagFilter_title {
+     color: #fff;
+ }
+ #root.dark .tagFilter_title.active {
+     color: #0b1f47;
+ }
+ 
+ #root.dark .filebar {
+     color: white !important;
+ }
+ 
+ #root.dark .allSharedTags{
+     color: #fff;
+ }
+ #root.dark span.allTags_back {
+     background-image: url(/media/images/tagBackWhite.svg);
+ 
+ }
+ #root.dark span.calenderIcon_task {
+ color: #fff;
+ }
+ #root.dark .tagMyName {
+     color: #fff;
+ }
+ #root.dark .TaskBody:hover .tagMyName {
+     color: #0b1f47;
+ }
+ #root.dark .tagFileCount{
+     color: #fff;
+ }
+ #root.dark .TaskBody:hover .tagFileCount {
+     color: #0b1f47;
+ }
+ #root.dark .tagFileStorage{
+     color: #fff;
+ }
+ #root.dark .TaskBody:hover .tagFileStorage {
+     color: #0b1f47;
+ }
+ .tagText {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
+.viewTag>div {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+/* start Tag side bar popup css*/
+.tagRelatedPopup {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    box-shadow: -20px 4px 54px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    height: 100%;
+    z-index: 999;
+      transition: opacity 0.5s ease-in;
+      opacity: 1;
+}
+.tagToggle_sidebar_head {
+    padding: 29px 0px 28px 36px;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.tagToggle_sidebar_head .tagsText {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0b1f47;
+}
+.tagToggle_sidebar_head .tagsRelatedText {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #318fff;
+}
+.tagToggle_sidebar_serach {
+    padding: 31px 14px 19px 36px;
+}
+input.TagSearchInput {
+    padding: 11px 276px 10px 13px;
+    border-radius: 40px;
+    border: solid 1.5px #a6d068;
+    background-color: rgba(166, 208, 104, 0.2);
+}
+input.TagSearchInput::placeholder {
+    font-family: Poppins;
+    font-size: 16px !important;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a7c00 !important;
+}
+.tagToggle_sidebar .instructionPara {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #858fa3;
+    padding: 0 45px 19px;
+}
+.selectAllArea {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 32px 34px 36px;
+    border-top: 1px solid #e3f2ff;
+    border-bottom: 1px solid #e3f2ff;
+}
+.tagsRelateLists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.alltagList li {
+    border-bottom: 1px solid #e3f2ff;
+    padding: 35px 24px 35px 36px;
+}
+ul.alltagList li:last-child {
+  border: none;
+}
+ul.alltagList::-webkit-scrollbar-thumb {
+    background: #a0d2fd;
+    border-radius: 30px;
+}
+/* STYLE C */
+
+.checkbox.style-c {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox.style-c input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark {
+  background-color: #0c1e47;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkbox.style-c:hover input ~ .checkbox__checkmark {
+  background-color: #eee;
+}
+.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+  background-color: #0c1e47;
+}
+.checkbox.style-c .checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #e3f2ff;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.checkbox.style-c .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.checkbox.style-c .checkbox__body {
+  /* color: #333;
+  line-height: 1.4;
+  font-size: 16px; */
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #032e84;
+
+}
+.tagFileTotal {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #5b6477;
+}
+ul.alltagList {
+    /* padding: 0 20px 0 36px; */
+    height: calc(100vh - 340px);
+    overflow-y: auto;
+}
+.tagCoupleBtn {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    right: 35px;
+    align-items: center;
+    gap: 9px;
+}
+.tagCoupleBtn .skipButton {
+    width: 70px;
+    height: 35px;
+    flex-grow: 0;
+    padding: 7px 19px 7px 22px;
+    border-radius: 46px;
+    background-color: #032e84;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+.tagCoupleBtn .viewFilesButton {
+    width: 108px;
+    height: 35px;
+    flex-grow: 0;
+    padding: 7px 21px 7px 20px;
+    border-radius: 46px;
+    background-color: #318fff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+.tagToggle_sidebar_serach .selectedTagCircle {
+    width: 20px;
+    height: 20px;
+    flex-grow: 0;
+    border-radius: 40px;
+    background-color: #a6d068;
+}
+.selectedTagLabel {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a7c00;
+    cursor: pointer;
+}
+.tagToggle_sidebar_serach .selectTags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+      height: 45px;
+  flex-grow: 0;
+  padding: 11px 0px 10px 13px;
+  border-radius: 40px;
+  border: solid 1.5px #a6d068;
+  background-color: rgba(166, 208, 104, 0.2);
+}
+.tagToggle_sidebar_serach {
+    padding: 31px 36px 19px 36px;
+}
+span.goIconArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* End Tag side bar popup css*/
+ /* responsive for large screen */
+ @media only screen and (min-height: 800px) {
+    .tagTableRowResponsive{
+        height: 450px !important;
+    }
+    .tagTable1{
+
+        height: 100% !important;
+
+
+    }
+}
+
+@media only screen and (min-height: 980px) {
+    .tagTableRowResponsive{
+        height: 450px !important;
+    }
+    .tagTable1{
+
+        height: 100% !important;
+
+
+    }
+}

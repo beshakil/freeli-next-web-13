@@ -1,0 +1,1640 @@
+/* .usersTabSecDevide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.usersTabList{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.usersTabList.active:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 3px;
+    background-color: #0c1e47;
+    left: 0;
+    bottom: -4px;
+}
+.usersTabSection {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.userSearchInput {
+    width: 300px;
+    height: 36px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 2px 10px;
+    margin-right: 12px;
+}
+.userCreateBtn {
+    height: 36px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #09266a;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.usersTabSecDevide.rightSide{
+    justify-content: flex-end;
+}
+.usersTabList:hover {
+    color: var(--NewRed);
+}
+.usersTabList:hover:before {
+    background-color: var(--NewRed);
+}
+.usersTableContainer {
+    height: calc(100vh - 160px);
+}
+.userTableHead ul {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed #d8d8d8;
+    border-bottom: 1px dashed #d8d8d8;
+}
+.userTableHead ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 6px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+.userTableBody ._userList {
+    list-style: none;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed hsla(0,0%,83.9%,.3137254901960784);
+    border-bottom: 1px dashed hsla(0,0%,83.9%,.3137254901960784);
+}
+.userTableBody ._userList li:first-child {
+    cursor: pointer;
+}
+.userTableBody ._userList>li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+}
+._userName ._userImgage {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+._userImgage .nameLetters, .conv_img .nameLetters, .userLogo .nameLetters {
+    width: 100%;
+    height: 100%;
+}
+#root.dark .nameLetters, .nameLetters {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.nameLetters {
+    width: 41px;
+    height: 41px;
+    background-color: #0c1e47;
+    color: #fff;
+}
+span._userNameTxt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 35px);
+}
+.userDateText, .userEmailText {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.userTableBody ._userList:hover {
+    background-color: #94b2ff;
+}
+.userActionIcon {
+    background-image: url(/media/images/gear.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.userActionPopup, .userActionPopup li {
+    list-style: none;
+    box-sizing: border-box;
+}
+.userActionPopup {
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(10,31,68,.08),0 8px 10px 0 rgba(10,31,68,.1);
+    position: fixed;
+    right: 42px;
+    top: 0;
+    width: 230px;
+    z-index: 1;
+    border: none;
+}
+.userActionPopup {
+    right: 15px!important;
+    width: 210px!important;
+}
+.userActionPopup li {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    color: #53627c;
+    color: #0c1e47;
+    font-family: var(--F1);
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+.userActionPopup, .userActionPopup li {
+    list-style: none;
+    box-sizing: border-box;
+}
+.userActionPopup li:hover {
+    background-color: #0c1e47;
+    color: #fff;
+} */
+
+/* *************** */
+/* Admin Panel */
+/* *************** */
+
+.adminRightHead {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+  }
+  .closeAdminPanel {
+    padding-left: 30px;
+    font-size: 20px;
+    color: #0c1e47;
+    background-image: url("/media/images/BackArrow.svg");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .usersTabSection {
+    width: 100%;
+    display: flex;
+    padding: 0 40px;
+    /*background-color: rosybrown;*/
+    margin-bottom: 20px;
+  }
+  .usersTabSecDevide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.usersTabList{
+    /* 
+    align-items: center;
+    gap: 5px;
+    */
+    display: flex;
+    position: relative; 
+}
+.usersTabList.active:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 3px;
+    background-color: #0c1e47;
+    left: 0;
+    bottom: -4px;
+}
+  
+  .usersTabList:hover {
+    color: var(--NewRed);
+  }
+  .usersTabList.active:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 3px;
+    background-color: #0c1e47;
+    left: 0;
+    bottom: -4px;
+  }
+  .usersTabList:hover:before {
+    background-color: var(--NewRed);
+  }
+  .userSearchInput {
+    width: 300px;
+    height: 36px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 2px 10px;
+    margin-right: 12px;
+  }
+  .userCreateBtn {
+    height: 36px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #09266a;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .usersTableContainer {
+    height: calc(100vh - 160px);
+    padding: 0 40px;
+  }
+  .userTableHead ul {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed #d8d8d8;
+    border-bottom: 1px dashed #d8d8d8;
+  }
+  .userTableHead ul li {
+    /* border-right: 1px dashed #d8d8d8; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 6px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+  }
+  /* .userTableHead li:before {
+    content: "\f160";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    font-weight: 600;
+    right: 5px;
+  }
+  .userTableHead li.active:before {
+    content: "\f161";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+  } */
+  .userTableHead ul li:last-child {
+    border-right: none;
+  }
+  .userTableHead ul li:last-child:before {
+    content: "";
+  }
+  ._userName {
+    width: 30%;
+  }
+  ._userEmail {
+    width: 30%;
+  }
+  ._userRole {
+    width: 20%;
+  }
+  ._userCDate {
+    width: 15%;
+  }
+  ._userCBy {
+    width: 15%;
+  }
+  ._userStatus {
+    width: 15%;
+  }
+  ._userAction {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  ._userRole::before,
+  ._userAction::before,
+  ._userStatus::before {
+    display: none;
+  }
+  
+  ._userName ._userImgage {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  
+  ._userName ._userImgage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .userTableBody {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    /* padding-bottom: 35px; */
+  }
+  .userTableBody ._userList {
+    list-style: none;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed #d6d6d650;
+    border-bottom: 1px dashed #d6d6d650;
+    /* border-bottom: none; */
+  }
+  .userTableBody ._userList:last-child {
+    margin-bottom: 100px;
+  }
+  #root.dark .userTableBody ._userList{
+    border-top: 1px dashed #3e3e3e;
+    border-bottom: 1px dashed #3e3e3e;
+  }
+  #root.dark .userTableHead ul {
+    border-top: 1px dashed #3e3e3e;
+    border-bottom: 1px dashed #3e3e3e;
+  }
+  .userTableBody ._userList:hover {
+    background-color: #94b2ff;
+  }
+  /* .userTableBody ._userList:hover li {
+    color: #ffffff;
+  } */
+  .userTableBody ._userList:last-child {
+    border-bottom: 1px dashed #d8d8d8;
+  }
+  .userTableBody ._userList > li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left:8px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+  }
+  .userTableBody ._userList li:first-child {
+    cursor: pointer;
+  }
+  .userTableBody ._userList li:last-child {
+    border-right: none;
+  }
+  ._userRole select {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+  }
+  .userActionIcon {
+    background-image: url(/media/images/gear.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  /* .settingsList .conv_list{
+    padding-left: 18px;
+  }
+  .settingsList .conv_list.selected{
+    padding-left: 12px;
+  } */
+  
+  .createUserModal {
+    box-sizing: border-box;
+    width: 500px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    height: auto;
+    position: relative;
+  }
+  .createUserModalHead {
+    width: 100%;
+    height: 55px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+  }
+  .createUserModalBody {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+  .cu_inputGroup {
+    width: 100%;
+    display: flow-root;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .createUserFrom > .cu_inputGroup:last-child {
+    margin-bottom: 0;
+  }
+  
+  .cu_inputGroup label {
+    height: 22px;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .cu_inputGroup select,
+  .cu_inputGroup input {
+    border: 1px solid #d6d6d6;
+    line-height: 40px;
+    font-size: 16px;
+    margin-top: 0;
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 14px 16px;
+    box-sizing: border-box;
+  }
+  .cu_inputGroup input::placeholder {
+    color: #9a9a9a;
+    font-family: var(--F1);
+    font-size: 15px;
+  }
+  
+  .cu_inputGroup input.error {
+    border: 1px solid red;
+  }
+  .cu_doubleInputGroup {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .createUserModalFoot {
+    width: 100%;
+    height: 65px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .createUserModalFoot .btnCancel {
+    box-sizing: border-box;
+    height: 42px;
+    width: auto;
+    padding: 0 20px;
+    border: 1px solid #09266a;
+    color: #09266a;
+    border-radius: 5px;
+    font-family: var(--F1);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .createUserModalFoot .btnCancel:hover {
+    border-color: var(--NewRed);
+  }
+  .createUserModalFoot .btnAction {
+    height: 42px;
+    width: auto;
+    border-radius: 5px;
+    background-color: #09266a;
+    color: #ffffff;
+    font-family: var(--F1);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px 0px 15px;
+    padding: 0 20px;
+    float: right;
+    box-sizing: border-box;
+  }
+  
+  .addedTeamLi {
+    width: 100%;
+    display: flow-root;
+    margin-bottom: 5px;
+  }
+  .addedTeamLi:empty {
+    display: none;
+  }
+  
+  .teamListView {
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    bottom: 38px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 0 1px 0 rgb(10 31 68 / 8%), 0 8px 10px 0 rgb(10 31 68 / 10%);
+    padding: 10px 0;
+    display: block;
+  }
+  .teamListView li {
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 96% 50%;
+    color: #0c1e47;
+  }
+  .teamListView li:hover {
+    background-color: #0c1e47;
+    color: #fff;
+  }
+  .userActionPopup {
+    list-style: none;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 rgb(10 31 68 / 8%), 0 8px 10px 0 rgb(10 31 68 / 10%);
+    right: 70px;
+    /* top: 0px; */
+    margin-top: -44px;
+    width: 230px;
+    z-index: 1;
+    border: none;
+  }
+  .userActionPopup li {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    width: 100%;
+    color: #53627c;
+    color: #0c1e47;
+    font-family: var(--F1);
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+  .userActionPopup li:hover {
+    background-color: #0c1e47;
+    color: #ffffff;
+  }
+  
+  .userInfoModal {
+    width: calc(100% - 400px);
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: -1px;
+    left: 400px;
+    background-color: #fafafa;
+    border-top: 1px solid #d8d8d8;
+    z-index: 1;
+  }
+  .userInfoNameSection {
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .userInfoName {
+    font-size: 20px;
+    line-height: 35px;
+    color: #0c1e47;
+  }
+  .userInfoDate {
+    font-size: 14px;
+    line-height: 22px;
+    color: #0c1e47;
+  }
+  .userInfoContainerSection {
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .userInfoTabSection {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    border-left: 0;
+    border-right: 0;
+    height: 45px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .userInfoTabSection li {
+    margin-right: 20px;
+    color: #0c1e47;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .userInfoTabSection li.active::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    margin-right: 20px;
+    background-color: #0c1e47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .userInfoContainer {
+    width: 100%;
+    height: calc(100vh - 260px);
+    /* overflow-y: auto; */
+  }
+  .userMainContainer {
+    display: flex;
+    padding: 15px 0;
+  }
+  .userImageContainer {
+    width: 125px;
+    border: 1px dashed #d8d8d8;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+  }
+  .userImageContainer img {
+    height: 80px;
+    width: 80px;
+    border-radius: 38%;
+    margin-top: 12px;
+  }
+  .userInfoTable {
+    width: calc(100% - 126px);
+  }
+  .userInfo_row {
+    display: flex;
+    border: 1px dashed #d8d8d8;
+    border-bottom: none;
+  }
+  .userInfo_row:last-child {
+    border-bottom: 1px dashed #d8d8d8;
+  }
+  .userInfo_row .userInfo_column {
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    color: #0c1e47;
+    padding-left: 10px;
+  }
+  .userInfo_row .userInfo_column:first-child {
+    width: 200px;
+    border-right: 1px dashed #d8d8d8;
+  }
+  .userInfoRole {
+    line-height: 30px;
+    padding-left: 28px;
+    position: relative;
+    cursor: pointer;
+  }
+  .userInfoRole::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid #0c1e47;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+  }
+  .userInfoRole.active::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0c1e47;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+  }
+  
+  .userInfoTeamContainer {
+    display: flex;
+    padding: 15px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  ._userTeam {
+    width: 160px;
+    height: 160px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 4%), 0 2px 4px 0 rgb(0 0 0 / 8%);
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-top: 4px solid #0c1e47;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+  }
+  ._userTeamName {
+    color: #0c1e47;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  ._userTeamDesignation {
+    color: #0c1e47;
+    font-size: 14px;
+  }
+  
+  .removeTeam {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 10px;
+    border-radius: 50%;
+    right: 10px;
+    background-image: url(/media/images/trash-red.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 14px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 4%), 0 2px 4px 0 rgb(0 0 0 / 8%);
+    display: none;
+  }
+  ._userTeam:hover .removeTeam {
+    display: block;
+  }
+  
+  ._userTeam._userTeamAdd {
+    border: 1px dashed #d8d8d8;
+  }
+  ._userTeamAddIcon {
+    width: 32px;
+    height: 32px;
+    background-image: url(/media/images/plus-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .teamManagementContainer {
+    height: calc(100vh - 126px);
+    padding: 0 40px;
+  }
+  .teamManagementTitle {
+    font-size: 16px;
+    color: #0c1e47;
+  }
+  .teamManagementTitle span {
+    font-size: 20px;
+    color: #9b9b9b;
+  }
+  .teamScrollContainer {
+    height: calc(100% - 26px);
+  }
+  .allTeamsContainer {
+    display: flex;
+    padding: 15px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fileManagementContainer {
+    height: calc(100vh - 126px);
+    padding: 0 40px;
+  }
+  .fileManagementTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .fileManagementTitle span {
+    font-size: 20px;
+    color: #0c1e47;
+  }
+  .fileManagementTitle input {
+    height: 36px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 340px;
+  }
+  .fileManagementTableContainer {
+    height: calc(100vh - 186px);
+  }
+  ._fileUserName {
+    width: 35%;
+  }
+  ._fileSize {
+    width: 25%;
+  }
+  ._fileTotalUse {
+    width: 25%;
+  }
+  ._fileAction {
+    width: 15%;
+  }
+  
+  .workCategoryContainer {
+    height: calc(100vh - 126px);
+    padding: 0 40px;
+  }
+  .workCategoryTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .workCategoryListTitle,
+  .workCategoryTitle > span {
+    font-size: 20px;
+    color: #0c1e47;
+  }
+  .root.dark .workCategoryListTitle,
+  .workCategoryTitle > span {
+    color: #ffffff;
+  }
+  .workCategoryCreateSection {
+    width: 600px;
+    display: flex;
+    margin: 15px 0;
+  }
+  .workCategoryCreateSection input {
+    height: 36px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  .addWorkCategoryBtn {
+    background-color: #0c1e47;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 14px;
+    min-width: 150px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .workCategoryListSection {
+    height: calc(100vh - 238px);
+  }
+  .workCategoryListContainer {
+    width: 600px;
+    height: calc(100vh - 261px);
+  }
+  .workCategoryList {
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .workCategoryList:hover {
+    background-color: #0c1e47;
+    color: #fff;
+  }
+  .workCategoryListTxt {
+    padding: 2px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .workCategoryListAction {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .workCategoryListEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 36px;
+  }
+  .workCategoryListEdit::before {
+    content: "\f044";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+  }
+  .workCategoryListDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 36px;
+  }
+  .workCategoryListDelete::before {
+    content: "\f057";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    float: right;
+  }
+  .workCategoryListTitle {
+    font-size: 20px;
+    color: #0c1e47;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .tagManagementContainer {
+    height: calc(100vh - 126px);
+    padding: 0 40px;
+  }
+  
+  .tagManagementTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tagCreateSection {
+    width: 100px;
+    display: flex;
+    margin: 15px 0;
+  }
+  .tagCreateSection input {
+    height: 36px;
+    border: 1px solid #d8d8d8;
+    /*border-radius: 4px 0 0 4px;*/
+    padding: 5px 10px;
+    border-right: none;
+  }
+  
+  .cr_tagColor {
+    border-radius: 4px 0 0 4px;
+    width: 10%;
+    width: 10%;
+    padding: 0 3px !important;
+  }
+  .cr_tagTitle {
+    width: calc(90% - 350px);
+    width: 58%;
+  }
+  .cr_tagTeam {
+    width: 200px;
+    width: 20%;
+  }
+  .cr_tagBtn {
+    background-color: #0c1e47;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 14px;
+    /*min-width: 150px;*/
+    align-items: center;
+    cursor: pointer;
+    width: 12%;
+  }
+  
+  .tagTableContainer {
+    height: calc(100vh - 192px);
+  }
+  
+  .tagTableHead ul {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px dashed #d8d8d8;
+  }
+  .tagTableHead ul li {
+    border-right: 1px dashed #d8d8d8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+  }
+  .tagTableHead li:before {
+    content: "\f160";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    font-weight: 600;
+    right: 5px;
+  }
+  .tagTableHead li.active:before {
+    content: "\f161";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+  }
+  .tagTableHead ul li:last-child {
+    border-right: none;
+  }
+  .tagTableHead ul li:last-child:before {
+    content: "";
+  }
+  
+  .tagTableBody {
+    position: relative;
+    top: -1px;
+    height: calc(100% - 40px);
+  }
+  .tagTableBody ._tagList {
+    list-style: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px dashed #d8d8d8;
+    border-bottom: none;
+  }
+  .tagTableBody ._tagList:last-child {
+    border-bottom: 1px dashed #d8d8d8;
+  }
+  .tagTableBody ._tagList > li {
+    border-right: 1px dashed #d8d8d8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-size: 14px;
+  }
+  .tagTableBody ._tagList li:first-child {
+    cursor: pointer;
+  }
+  .tagTableBody ._tagList li:last-child {
+    border-right: none;
+  }
+  
+  ._tagColor {
+    width: 10%;
+  }
+  
+  ._tagColor input {
+    width: 100%;
+    height: 36px;
+    padding: 0 3px;
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+  }
+  ._tagTitle {
+    width: 25%;
+  }
+  ._tagTeam {
+    width: 33%;
+  }
+  ._tagSize {
+    width: 7%;
+  }
+  ._tagCreated {
+    width: 20%;
+  }
+  ._tagCreated span{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  ._tagAction {
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  ._tagAction ._editTag {
+    padding: 2px 5px;
+    background-color: #0c1e47;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  ._tagAction ._deleteTag {
+    padding: 2px 5px;
+    background-color: var(--NewRed);
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .createTeamModal {
+    box-sizing: border-box;
+    width: 400px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    height: auto;
+    position: relative;
+  }
+  .createTeamModalHead {
+    width: 100%;
+    height: 55px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+  }
+  .createTeamModalBody {
+    padding: 15px 32px;
+    box-sizing: border-box;
+  }
+  .createTeamModalFoot {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+  
+  .createTeamModalFoot .btnCancel {
+    box-sizing: border-box;
+    height: 36px;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #0c1e47;
+    color: #0c1e47;
+    border-radius: 4px;
+    font-family: var(--F1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .createTeamModalFoot .btnCancel:hover {
+    border-color: var(--NewRed);
+  }
+  .createTeamModalFoot .btnAction {
+    height: 36px;
+    width: auto;
+    border-radius: 4px;
+    background-color: #0c1e47;
+    color: #ffffff;
+    font-family: var(--F1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px 0px 15px;
+    padding: 0 15px;
+    float: right;
+    box-sizing: border-box;
+  }
+  .crTeam_inputGroup {
+    width: 100%;
+    display: flow-root;
+    position: relative;
+  }
+  .crTeam_inputGroup label {
+    /* height: 16px;
+    color: #0c1e47;
+    font-family: var(--F1);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 7.25px; */
+    height: 22px;
+    color: #565656;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .crTeam_inputGroup select,
+  .crTeam_inputGroup input {
+    /* height: 38.5px;
+    width: 100%;
+    border: 1.5px solid #e6e8ed;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 8.5px;
+    box-sizing: border-box; */
+  
+    width: 100%;
+    display: flow-root;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d6d6d6;
+    font-size: 16px;
+  }
+  .teamInfoNameSection {
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .teamInfoName {
+    font-size: 20px;
+    line-height: 35px;
+    color: #0c1e47;
+  }
+  .teamInfoDate {
+    font-size: 14px;
+    line-height: 22px;
+    color: #0c1e47;
+  }
+  .tagInfoActionSection {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  .searchTeamUser {
+    height: 36px;
+    width: 400px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 0 10px;
+  }
+  .addUserToTeamBtn {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #0c1e47;
+    cursor: pointer;
+    height: 36px;
+    margin-left: 15px;
+    color: #fff;
+  }
+  .deleteTeamBtn {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: var(--NewRed);
+    border: 1px solid var(--NewRed);
+    cursor: pointer;
+    height: 36px;
+    margin-left: 15px;
+  }
+  .teamUsersTableContainer {
+    height: calc(100vh - 270px);
+    padding: 0 40px;
+  }
+  
+  .userInfo_column.name_column,
+  .userInfo_column.dob_coumn,
+  .userInfo_column.phone_column,
+  .userInfo_column.address_column,
+  .userInfo_column.employed_column,
+  .userInfo_column.salary_column,
+  .userInfo_column.workEmail_column,
+  .userInfo_column.workNumber_column,
+  .userInfo_column.email_column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(100% - 220px);
+  }
+  .userInfo_column .userInfoField {
+    width: calc(100% - 100px);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .edit_row {
+    width: auto;
+    background-color: #09266a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  .userInfo_column:hover .edit_row {
+    display: block;
+  }
+  
+  .removePopupModal {
+    box-sizing: border-box;
+    width: 460px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    height: auto;
+    position: relative;
+  }
+  .removePopupModalHead {
+    border-bottom: 1px solid #d8d8d8;
+    height: 55px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+  }
+  .removePopupModalHead .popupTitle {
+    box-sizing: border-box;
+    color: #0c1e47;
+    font-family: var(--F1);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .removePopupModalBody {
+    padding: 15px 32px;
+    box-sizing: border-box;
+  }
+  .removePopupModalFoot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 32px;
+    height: 78px;
+    box-sizing: border-box;
+  }
+  .removePopupContent {
+    font-size: 15px;
+    color: #0c1e47;
+  }
+  
+  .contentHolder {
+    list-style: none;
+    height: 164px;
+    overflow-y: auto;
+    float: left;
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  
+  .contentList {
+    line-height: 30px;
+    margin-bottom: 5px;
+    color: #0c1e47;
+    cursor: pointer;
+    padding-left: 25px;
+    background-color: #ffffff;
+    float: left;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border-radius: 4px;
+    width: max-content;
+    padding-right: 6px;
+    font-size: 15px;
+  }
+  .contentList.public {
+    background-image: url(/media/images/PublicHash_blue.svg);
+  }
+  .contentList.private {
+    background-image: url(/media/images/PrivateLock_blue.svg);
+  }
+  
+  .removePopupModalFoot .btnCancel {
+    box-sizing: border-box;
+    height: 36px;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #0c1e47;
+    color: #0c1e47;
+    border-radius: 4px;
+    font-family: var(--F1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .removePopupModalFoot .btnCancel:hover {
+    border-color: var(--NewRed);
+  }
+  .removePopupModalFoot .btnAction {
+    height: 36px;
+    width: auto;
+    border-radius: 4px;
+    background-color: var(--NewRed);
+    color: #ffffff;
+    font-family: var(--F1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px 0px 15px;
+    padding: 0 15px;
+    float: right;
+    box-sizing: border-box;
+  }
+  .userInfoField:focus {
+    background-color: #f1f10029;
+  }
+  span._userNameTxt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 35px);
+  }
+  
+  .sweetCancel,
+  .btn.btn-lg.btn-link {
+    margin: 0 8px;
+    border-color: rgb(212, 63, 58);
+    /* box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(212, 63, 58, 0.6) 0px 0px 8px; */
+    width: 110px;
+    height: 40px;
+    background-color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(7 18 43);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid rgb(7 18 43);
+    cursor: pointer;
+  }
+  .sweetChangeMore,
+  .sweetSave,
+  .sweetChange,
+  .btn.btn-lg.btn-danger {
+    border-color: rgb(212, 63, 58);
+    /* box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(212, 63, 58, 0.6) 0px 0px 8px; */
+    box-shadow: none !important;
+    width: 110px;
+    height: 40px;
+    background-color: #09266a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  button.sweetSave:hover {
+    background-color: #0d2150;
+  }
+  .teamCBY::before {
+    display: none;
+  }
+  .crTeam_inputGroup .css-1rhbuit-multiValue {
+    position: relative;
+    top: -5px;
+  }
+  
+  .userTableHead ul li.asce .sortIcons:before {
+    content: "\f160";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    font-weight: 600;
+    left: 0px;
+  }
+  
+  .userTableHead ul li.desc .sortIcons:before {
+    content: "\f161";
+    font-family: "FontAwesome";
+    margin-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .usersTabSecDevide.rightSide{
+    justify-content: flex-end;
+}
+.right_container {
+    width: calc(100% - 346px);
+    height: 100vh;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+}
+.borderLine {
+    border-top: .067px solid #475674;
+    padding-bottom: 10px;
+}
+.left_adminList p.list_container_title {
+    background-image: url(/media/images/backIcom.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 300px 8px;
+    margin-left: 0;
+    background-color: initial;
+}
+.left_adminList p.list_container_title:hover {
+    background-color: #0c2854;
+}
