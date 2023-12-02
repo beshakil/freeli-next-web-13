@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@date-io/dayjs": "^2.15.0",
-    "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fullcalendar/core": "^6.0.3",
     "@fullcalendar/daygrid": "^6.0.3",
